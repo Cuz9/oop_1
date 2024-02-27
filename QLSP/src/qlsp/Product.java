@@ -1,6 +1,6 @@
 package qlsp;
 
-public class Product extends Category {
+public class Product {
 	Long id;
 	String proname;
 	Double price;
@@ -8,7 +8,7 @@ public class Product extends Category {
 	Category category;
 
 	public Product(String name, Long id, String proname, Double price, Integer quantity, Category category) {
-		super(name);
+		super();
 		this.id = id;
 		this.proname = proname;
 		this.price = price;
@@ -17,7 +17,7 @@ public class Product extends Category {
 	}
 
 	public Product(Long id, String name, Double price, Integer quantity, Category category) {
-		super(name);
+		super();
 		this.id = id;
 		this.proname = name;
 		this.price = price;
