@@ -94,7 +94,7 @@ public class Main {
 					scanner.nextLine();
 					Product product = productManager.getProductById(idToDisplay);
 					if (product != null) {
-						System.out.println(product.id + " - " + product.name + " - " + product.price + " - "
+						System.out.println(product.id + " - " + product.proname + " - " + product.price + " - "
 								+ product.quantity + " - " + product.category.name);
 					} else {
 						System.out.println("Không tìm thấy sản phẩm với id đã nhập.");
